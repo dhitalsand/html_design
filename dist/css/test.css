@@ -1,0 +1,98 @@
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: #51596b; }
+
+.navigation {
+  background-color: #634747d7;
+  height: 50px;
+  width: 100%;
+  margin-top: 0px;
+  display: inline-block; }
+  .navigation .line-btn {
+    right: 25px;
+    top: 60px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.5s ease-out; }
+    .navigation .line-btn .line {
+      width: 25px;
+      height: 3px;
+      margin-top: 4px;
+      background-color: black; }
+    .navigation .line-btn.close {
+      transform: rotate(180deg); }
+      .navigation .line-btn.close .line:nth-child(1) {
+        background: red;
+        transform: rotate(45deg) translate(5px, 3px); }
+      .navigation .line-btn.close .line:nth-child(2) {
+        opacity: 0; }
+      .navigation .line-btn.close .line:nth-child(3) {
+        background: red;
+        transform: rotate(-45deg) translate(7px, -5px); }
+
+.menu {
+  height: 600px;
+  width: 100%;
+  opacity: 0.9;
+  margin: 10px;
+  background-color: #292941;
+  display: none;
+  z-index: -8;
+  transition: all 0.5s ease-out; }
+  .menu.show {
+    display: block; }
+
+.zindex {
+  left: 0px;
+  top: 100px;
+  bottom: 50px;
+  width: 100%;
+  height: 1023px;
+  background-color: aquamarine;
+  overflow: hidden;
+  z-index: -1;
+  display: flex; }
+  .zindex .left-add {
+    margin: 10px;
+    height: 950px;
+    width: 23%;
+    background-color: bisque;
+    float: left; }
+  .zindex .container {
+    margin: 10px 10px 0 0;
+    height: 950px;
+    width: 49%;
+    float: left;
+    background-color: bisque; }
+    .zindex .container .first {
+      margin: 2%;
+      height: 300px;
+      width: 96%;
+      background-color: #374864; }
+    .zindex .container .sec {
+      margin: 2%;
+      height: 300px;
+      width: 96%;
+      background-color: #374864; }
+  .zindex .right-add {
+    margin: 10px 10px 10px 0px;
+    height: 950px;
+    width: 27%;
+    background-color: bisque;
+    display: inline-block;
+    float: right; }
+  .zindex.absolute {
+    position: absolute; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #51596b; }
